@@ -37,7 +37,6 @@ render(templateRegister(),document.querySelector("body div.container"));
 
 const formEl = document.querySelector("form");
 
-
 formEl.addEventListener("submit",async (e) => {
     e.preventDefault();
 
@@ -47,8 +46,6 @@ formEl.addEventListener("submit",async (e) => {
     const email = form.get("email");
     const password = form.get("password");
     const repeat = form.get("rePass");
-    console.log("hui");
-    
 
     if(email == "" || password == "" || repeat == ""){
        alert("empty input fields");
